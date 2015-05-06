@@ -1,0 +1,15 @@
+<template name="home">
+    <form>
+        <input type="text" name="title" placeholder="Title goes here...">
+        <textarea name="content" placeholder="Entry goes here..."></textarea>
+        <input type="submit" value="Add Post">
+    </form>
+</template>
+
+<template name="post">
+    <h1>{{title}}</h1>
+    <div class="permalink" contenteditable="true">{{permalink}}</div>
+    <div class="entry">
+        {{content}}
+    </div>
+</template>
